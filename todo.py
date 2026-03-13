@@ -95,4 +95,11 @@ def save_tasks(tasks):
             file.write(task + "\n")
 
 tasks =load_tasks()
-                  
+while True:
+
+    print("\n--- TO DO LIST---")                  
+    print("1. Add Task")                  
+    print("2. View Tasks")                  
+    print("\n--- TO DO LIST---")                  
+    print("\n--- TO DO LIST---")                  
+    print("\n--- TO DO LIST---")                  
