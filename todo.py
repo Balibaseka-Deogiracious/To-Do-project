@@ -86,6 +86,8 @@ def load_tasks():
     if not os.path.exists(FILE):
         return []
     with open(FILE, "r") as file:
-        tasks =
-file.rad().splitlines()
-return tasks        
+        tasks =file.read().splitlines()
+    return tasks
+
+def save_tasks(tasks):
+    with open(FILE, "r")      
