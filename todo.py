@@ -90,4 +90,9 @@ def load_tasks():
     return tasks
 
 def save_tasks(tasks):
-    with open(FILE, "r")      
+    with open(FILE, "w") as file:
+        for task in tasks:
+            file.write(task + "\n")
+
+tasks =load_tasks()
+                  
