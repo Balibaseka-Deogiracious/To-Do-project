@@ -83,4 +83,9 @@ import os
 FILE = "tasks.txt"
 
 def load_tasks():
-    if not os.path.exists()
+    if not os.path.exists(FILE):
+        return []
+    with open(FILE, "r") as file:
+        tasks =
+file.rad().splitlines()
+return tasks        
