@@ -5,12 +5,12 @@ FILE = "tasks.txt"
 def load_tasks():
     if not os.path.exists(FILE):
         return []
-    with open(FILE, "r") as file:
+    with open(FILE, "r", encoding='utf-8') as file:
         tasks =file.read().splitlines()
     return tasks
 
 def save_tasks(tasks):
-    with open(FILE, "w") as file:
+    with open(FILE, "w", encoding='utf-8') as file:
         for task in tasks:
             file.write(task + "\n")
 
